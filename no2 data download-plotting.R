@@ -542,6 +542,7 @@ d.2002<-mean(d.2002.stack,na.rm=TRUE)
 #calculate 5-year average 1998-2002
 d<-mean(stack(d.1998,d.1999,d.2000,d.2001,d.2002),na.rm=TRUE)
 
+projection(d) <- "+proj=longlat +datum=WGS84 +ellps=WGS84"
 
 #### Plot the Data for Ontario ####
 
